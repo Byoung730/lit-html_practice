@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
     <title>It's lit</title>
 </head>
 
@@ -12,18 +13,21 @@
     <script type="module">
         import {html, render} from './node_modules/lit-html/lit-html.js';
     
-        const firstItem = 'Tiger'
+        const items = ['Tiger', 'Lion', 'Bear', 'Chicken'];
 
-        const myHeader = html `<div>Hello World</div>`;
-        const myListView = html `<ul>
-                <li>${firstItem}</li>
-                <li>Lion</li>
-                <li>Bear</li>
-            </ul>`;
+        const theList = html`
+            <ul class="list">
+            ${items.map(item => html`<li>${item}</li>`)}
+            </ul>
+            `;
+
+        
+
+        const myHeader = html `<h1>Hello World</h1>`;
 
         const myPage = () => html`
             ${myHeader}
-            ${myListView}
+            ${theList}
             `;
     
         render(myPage(), document.body);

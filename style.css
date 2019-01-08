@@ -1,0 +1,26 @@
+*,
+*::after,
+*::before {
+    margin: .25rem;
+    padding: .25rem;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    padding: 3rem;
+    background-color: #eee;
+}
+
+.list {
+    font-size: 2rem;
+    font-family: 'Trebuchet MS';
+    color: cornflowerblue;
+    background-image: linear-gradient(to right bottom, rgba(#f7f7f7, 0.8), rgba(#999, 0.8)), url("../img/hero.jpg");
+    background-size: cover;
+    background-position: top;
+}
