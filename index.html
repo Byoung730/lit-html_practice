@@ -11,13 +11,24 @@
 </head>
 
 <body>
+
     <script type="module">
         import {html, render} from './node_modules/lit-html/lit-html.js';
+    
+        const myHeader = html `<div>Hello World</div>`;
+        const myListView = html `<ul>
+                <li>First Item</li>
+                <li>Second Item</li>
+                <li>Third Item</li>
+            </ul>`;
 
-        const myTemplate = (name) => html `<p>Hello ${name}</p>`;
-
-        render(myTemplate('World'), document.body);
-    </script>
+        const myPage = () => html`
+            ${myHeader}
+            ${myListView}
+            `;
+    
+        render(myPage(), document.body);
+        </script>
 
 </body>
 
