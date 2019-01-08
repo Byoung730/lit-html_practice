@@ -20,7 +20,7 @@ body {
     font-size: 2rem;
     font-family: 'Trebuchet MS';
     color: cornflowerblue;
-    background-image: linear-gradient(to right bottom, rgba(#f7f7f7, 0.8), rgba(#999, 0.8)), url("../img/hero.jpg");
+    background-image: linear-gradient(to right bottom, rgba(#f7f7f7, 0.8), rgba(#999, 0.8)), url(<--find picture-->);
     background-size: cover;
     background-position: top;
 }
