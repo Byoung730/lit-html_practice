@@ -6,20 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>It's lit</title>
-
-
 </head>
 
 <body>
-
     <script type="module">
         import {html, render} from './node_modules/lit-html/lit-html.js';
     
+        const firstItem = 'Tiger'
+
         const myHeader = html `<div>Hello World</div>`;
         const myListView = html `<ul>
-                <li>First Item</li>
-                <li>Second Item</li>
-                <li>Third Item</li>
+                <li>${firstItem}</li>
+                <li>Lion</li>
+                <li>Bear</li>
             </ul>`;
 
         const myPage = () => html`
@@ -28,8 +27,7 @@
             `;
     
         render(myPage(), document.body);
-        </script>
-
+    </script>
 </body>
 
 </html>
