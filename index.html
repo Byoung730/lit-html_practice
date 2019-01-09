@@ -1,37 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" />
     <title>It's lit</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <script type="module">
-        import {html, render} from './node_modules/lit-html/lit-html.js';
-    
-        const items = ['Tiger', 'Lion', 'Bear', 'Chicken'];
+      import { html, render } from './node_modules/lit-html/lit-html.js'
 
-        const theList = html`
-            <ul class="list">
-            ${items.map(item => html`<li>${item}</li>`)}
-            </ul>
-            `;
+      const items = ['Simple', 'Modern', 'Safe', 'Small']
 
-        
+      const theList = html`
+        <ul class="list">
+          ${
+            items.map(
+              item =>
+                html`
+                  <li>${item}</li>
+                `
+            )
+          }
+        </ul>
+      `
 
-        const myHeader = html `<h1>Hello World</h1>`;
+      const myHeader = html`
+        <h1>Reasons Lit-HTML is awesome:</h1>
+      `
 
-        const myPage = () => html`
-            ${myHeader}
-            ${theList}
-            `;
-    
-        render(myPage(), document.body);
+      const myPage = () => html`
+        ${myHeader} ${theList}
+      `
+
+      render(myPage(), document.body)
     </script>
-</body>
-
+  </body>
 </html>

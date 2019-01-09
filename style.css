@@ -6,6 +6,7 @@
     box-sizing: inherit;
 }
 
+
 html {
     font-size: 62.5%;
 }
@@ -17,10 +18,144 @@ body {
 }
 
 .list {
-    font-size: 2rem;
+    position: absolute;
+    border-radius: 7px;
+    top: 40%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
     font-family: 'Trebuchet MS';
-    color: cornflowerblue;
-    background-image: linear-gradient(to right bottom, rgba(#f7f7f7, 0.8), rgba(#999, 0.8)), url(<--find picture-->);
+    list-style-type: none;
+    width: 15%;
+    color: rgb(245, 215, 98);
+    background-color: #777;
+    background-image: linear-gradient(to right bottom, rgba(#999, 0.8), rgba(#f7f7f7, 0.8)) !important;
     background-size: cover;
     background-position: top;
+}
+
+li {
+    padding-bottom: 1rem;
+}
+
+h1 {
+    font-size: 5rem;
+    -webkit-animation: color-change 4s infinite;
+    -moz-animation: color-change 4s infinite;
+    -o-animation: color-change 4s infinite;
+    -ms-animation: color-change 4s infinite;
+    animation: color-change 4s infinite;
+}
+
+@-webkit-keyframes color-change {
+    0% {
+        color: rgb(155, 43, 43);
+    }
+
+    25% {
+        color: rgb(69, 8, 60);
+    }
+
+    50% {
+        color: blue;
+    }
+
+    75% {
+        color: rgb(172, 135, 76);
+    }
+
+    100% {
+        color: rgb(143, 45, 45);
+    }
+}
+
+@-moz-keyframes color-change {
+    0% {
+        color: rgb(155, 43, 43);
+    }
+
+    25% {
+        color: rgb(69, 8, 60);
+    }
+
+    50% {
+        color: blue;
+    }
+
+    75% {
+        color: rgb(172, 135, 76);
+    }
+
+    100% {
+        color: rgb(143, 45, 45);
+    }
+}
+
+
+@-ms-keyframes color-change {
+    0% {
+        color: rgb(155, 43, 43);
+    }
+
+    25% {
+        color: rgb(69, 8, 60);
+    }
+
+    50% {
+        color: blue;
+    }
+
+    75% {
+        color: rgb(172, 135, 76);
+    }
+
+    100% {
+        color: rgb(143, 45, 45);
+    }
+}
+
+
+@-o-keyframes color-change {
+    0% {
+        color: rgb(155, 43, 43);
+    }
+
+    25% {
+        color: rgb(69, 8, 60);
+    }
+
+    50% {
+        color: blue;
+    }
+
+    75% {
+        color: rgb(172, 135, 76);
+    }
+
+    100% {
+        color: rgb(143, 45, 45);
+    }
+}
+
+
+@keyframes color-change {
+    0% {
+        color: rgb(155, 43, 43);
+    }
+
+    25% {
+        color: rgb(69, 8, 60);
+    }
+
+    50% {
+        color: blue;
+    }
+
+    75% {
+        color: rgb(172, 135, 76);
+    }
+
+    100% {
+        color: rgb(143, 45, 45);
+    }
 }
