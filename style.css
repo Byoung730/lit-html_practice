@@ -15,6 +15,7 @@ body {
     box-sizing: border-box;
     padding: 3rem;
     background-color: #eee;
+    font-family: 'Trebuchet MS';
 }
 
 .list {
@@ -24,7 +25,6 @@ body {
     left: 20%;
     transform: translate(-50%, -50%);
     font-size: 4rem;
-    font-family: 'Trebuchet MS';
     list-style-type: none;
     width: 15%;
     color: rgb(245, 215, 98);
